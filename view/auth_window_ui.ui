@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthorizationWindow</class>
+ <widget class="QWidget" name="AuthorizationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Окно авторизации</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="login_le">
+     <property name="styleSheet">
+      <string notr="true">border-color: black;
+border-width: 1px;
+border-style: solid
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Введите логин</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="password_le">
+     <property name="styleSheet">
+      <string notr="true">border-color: black;
+border-width: 1px;
+border-style: solid</string>
+     </property>
+     <property name="placeholderText">
+      <string>Введите пароль</string>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QPushButton" name="auth_btn">
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #00FA9A</string>
+     </property>
+     <property name="text">
+      <string>Войти</string>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QPushButton" name="guest_btn">
+     <property name="styleSheet">
+      <string notr="true">background-color: #00FA9A</string>
+     </property>
+     <property name="text">
+      <string>Войти как гость</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

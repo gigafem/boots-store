@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrderFormWindow</class>
+ <widget class="QWidget" name="OrderFormWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>290</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Заказ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="id_l">
+       <property name="text">
+        <string>Номер заказа:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="id_le">
+       <property name="styleSheet">
+        <string notr="true">background-color: #EEEEEE;
+border: 1px solid black</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="articles_l">
+       <property name="text">
+        <string>Артикул заказа:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="articles_le">
+       <property name="toolTip">
+        <string>Укажите через запятую артикул товара и количество, например: A112T4, 2, F635R4, 1</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid black</string>
+       </property>
+       <property name="placeholderText">
+        <string>Артикул, количество, ... (A112T4, 2, F635R4, 1)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="status_l">
+       <property name="text">
+        <string>Статус заказа:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="status_cb"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="pick_up_point_l">
+       <property name="text">
+        <string>Адрес пункта выдачи:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="pick_up_point_cb"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="date_order_l">
+       <property name="text">
+        <string>Дата заказа:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDateEdit" name="date_order_de">
+       <property name="displayFormat">
+        <string>dd.MM.yyyy</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="date_delivery_l">
+       <property name="text">
+        <string>Дата выдачи:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDateEdit" name="date_delivery_de">
+       <property name="toolTip">
+        <string>Дата выдачи не может быть раньше даты заказа</string>
+       </property>
+       <property name="displayFormat">
+        <string>dd.MM.yyyy</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttons_layout">
+     <item>
+      <widget class="QPushButton" name="back_btn">
+       <property name="styleSheet">
+        <string notr="true">background-color: #7FFF00</string>
+       </property>
+       <property name="text">
+        <string>Назад</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delete_btn">
+       <property name="styleSheet">
+        <string notr="true">background-color: #7FFF00</string>
+       </property>
+       <property name="text">
+        <string>Удалить заказ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save_btn">
+       <property name="styleSheet">
+        <string notr="true">background-color: #00FA9A</string>
+       </property>
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
